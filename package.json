@@ -16,7 +16,7 @@
     "url": "https://www.linkedin.com/in/nickolaswilson"
   },
   "main": "socket.io-utils.js",
-  "repository": "github:NAWilson9/socket.io-utils",
+  "repository": "https://github.com/NAWilson9/socket.io-utils",
   "dependencies": {
     "socket.io": "latest"
   }
