@@ -102,6 +102,11 @@ module.exports = function (newIo, customFunctions) {
             if (io.sockets.adapter.rooms[roomName] === undefined) throw new ReferenceError('socket.io-utils: getSocketsInRoom: No room found with inputted name');
             return io.sockets.adapter.rooms[roomName].sockets;
         },
+
+        /**
+         * Returns an object containing all of the current rooms.
+         * @returns {object} io.sockets.adapter.rooms
+         */
         getRooms: function () {
             return io.sockets.adapter.rooms;
         }
