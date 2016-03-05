@@ -7,11 +7,11 @@ socket.io-utils adds functions to the main Socket.io object in order to ease com
 
 ## Usage
 ### Initialization
-socket.io-utils can be flexibly incorporated into any project. It was designed to not interfer with any pre-existing usage of Socket.io to allow painless incorportation at any stage of development.
+socket.io-utils can be flexibly incorporated into any project. It was designed to not interfere with any pre-existing usage of Socket.io to allow painless incorporation at any stage of development.
 
-To use socket.io-utils with a prexisting Socket.io usage, just pass in the io object to the socket.io-utils initialization.  
+To use socket.io-utils with a preexisting Socket.io usage, just pass in the io object to the socket.io-utils initialization.  
 ```js
-var io = require('socket.io');
+var io = require('socket.io')();
 require('socket.io-utils')(io);
 ```
 
@@ -20,9 +20,9 @@ Alternatively, you can do it this way.
 var io = require('socket.io-utils')(require('socket.io')());
 ```
 
-These options are useful if you want to control which version of Socket.io you're using. However, you can also simply require socket.io-utils and the lastest version of Socket.io will be utilized.  
+These options are useful if you want to control which version of Socket.io you're using. However, you can also simply require socket.io-utils and the latest version of Socket.io will be utilized.  
 ```js
-var io = require('socket.io-utils');
+var io = require('socket.io-utils')();
 ```
 
 ### Function Usage
@@ -30,7 +30,7 @@ Incorporating socket.io-utils adds functions to the io object by sticking them o
 
 To call a socket.io-utils function, the format is:  
 ```js
-io.utils.*functionName*();
+io.utils.functionName();
 ```
 
 ### Functions
@@ -74,10 +74,10 @@ var customFunctions = [foo = function foo(){}];
 var io = require('socket.io-utils')(null, customFunctions);
 ```
 #### Object Example
-Passing in an object is much cleaner and should be the prefered method.  
+Passing in an object is much cleaner and should be the preferred method.  
 ```js
 var customFunctions = {
-    foo: function(){};
-}
+    foo: function(){}
+};
 var io = require('socket.io-utils')(null, customFunctions);
 ```
