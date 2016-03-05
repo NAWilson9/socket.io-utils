@@ -1,0 +1,23 @@
+{
+  "name": "socket.io-utils",
+  "version": "0.1.0",
+  "description": "Socket.io-utils adds functions to the main Socket.io object in order to ease common operations.",
+  "keywords": [
+    "realtime",
+    "websocket",
+    "socket",
+    "io",
+    "socket.io",
+    "utils"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Nick Wilson",
+    "url": "https://www.linkedin.com/in/nickolaswilson"
+  },
+  "main": "socket.io-utils.js",
+  "repository": "github:NAWilson9/socket.io-utils",
+  "dependencies": {
+    "socket.io": "latest"
+  }
+}
