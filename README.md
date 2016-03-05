@@ -70,7 +70,9 @@ Acceptable inputs as custom functions are either an array of functions or an obj
 #### Array Example
 When using a function array, you have to be sure to define the functions with a name.  
 ```js
-var customFunctions = [foo = function foo(){}];
+var customFunctions = [
+    foo = function foo(){}
+];
 var io = require('socket.io-utils')(null, customFunctions);
 ```
 #### Object Example
