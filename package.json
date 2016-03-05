@@ -1,7 +1,7 @@
 {
   "name": "socket.io-utils",
   "version": "0.1.0",
-  "description": "Socket.io-utils adds functions to the main Socket.io object in order to ease common operations.",
+  "description": "Socket.io helper functions",
   "keywords": [
     "realtime",
     "websocket",
